@@ -75,4 +75,18 @@ public class BlueSkyCitadelForm {
     public void iClickOnTheRadioButton() {
         driver.findElement(By.cssSelector("#nf-label-class-field-138-0")).click();
     }
+
+    @Given("^I navigate to blueskycitadelevents site$")
+    public void iNavigateToBlueskycitadeleventsSite() {
+    }
+
+    @And("^I enter the Date$")
+    public void iEnterTheDate() {
+        driver.findElement(By.id("tribe-bar-date")).click();
+
+    }
+
+    @When("^I click on my Events$")
+    public void iClickOnMyEvents() {
+    }
 }
